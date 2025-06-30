@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Eco-nestro Organic Gardening Services</title>
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #6b8e23;
+            --secondary-color: #556b2f;
+            --accent-color: #8fbc8f;
+            --light-color: #f5f5f0;
+            --dark-color: #33332d;
+            --text-color: #3a3a32;
+            --highlight-color: #c1d8ac;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--primary-color);
+            padding: 20px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Privacy Content Styles */
+        .privacy-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .privacy-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .privacy-header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .privacy-content {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .privacy-section {
+            margin-bottom: 50px;
+        }
+
+        .privacy-section h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .privacy-section h3 {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin: 30px 0 15px;
+        }
+
+        .privacy-section p {
+            margin-bottom: 15px;
+        }
+
+        .privacy-section ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .privacy-section li {
+            margin-bottom: 10px;
+        }
+
+        .highlight-box {
+            background-color: var(--highlight-color);
+            padding: 20px;
+            border-left: 4px solid var(--primary-color);
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        .disclaimer {
+            background-color: #222;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            line-height: 1.5;
+            color: #aaa;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-container {
+                position: relative;
+            }
+            
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--primary-color);
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                display: none;
+            }
+            
+            nav.active {
+                display: block;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin: 0 0 15px 0;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .privacy-header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                
+                <h1>Eco-nestro</h1>
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu" id="mobileMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Privacy Header -->
+    <section class="privacy-header">
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p>Last Updated: June 15, 2023</p>
+        </div>
+    </section>
+
+    <!-- Privacy Content -->
+    <section class="privacy-content">
+        <div class="container">
+            <div class="privacy-section">
+                <h2>Introduction</h2>
+                <p>Welcome to Eco-nestro's Privacy Policy. This document outlines how we collect, use, disclose, and safeguard your information when you visit our website or use our services. We are committed to protecting your privacy and ensuring the security of your personal data in compliance with applicable data protection laws, including the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA).</p>
+                
+                <div class="highlight-box">
+                    <p>By accessing or using our services, you agree to the collection and use of information in accordance with this policy. If you do not agree with our policies and practices, please do not use our services.</p>
+                </div>
+                
+                <p>This policy applies to all information collected through our website, mobile applications, and any related services, sales, marketing, or events. Please read this privacy policy carefully as it will help you make informed decisions about sharing your personal information with us.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>Information We Collect</h2>
+                <p>We collect various types of information to provide and improve our services to you. This includes:</p>
+                
+                <h3>1. Personal Identification Information</h3>
+                <p>We collect personal information that you voluntarily provide to us when registering for an account, expressing an interest in obtaining information about us or our services, or otherwise contacting us. This may include:</p>
+                <ul>
+                    <li>Name and contact details (email address, phone number, mailing address)</li>
+                    <li>Account credentials (username, password)</li>
+                    <li>Payment information (credit card details, billing address)</li>
+                    <li>Demographic information (age, gender, preferences)</li>
+                    <li>Any other personal information you choose to provide</li>
+                </ul>
+                
+                <h3>2. Automatically Collected Information</h3>
+                <p>When you visit our website, we automatically collect certain information about your device and browsing behavior through cookies and similar technologies:</p>
+                <ul>
+                    <li>IP address and device identifiers</li>
+                    <li>Browser type and version</li>
+                    <li>Pages viewed and time spent on pages</li>
+                    <li>Referring website addresses</li>
+                    <li>Operating system and platform</li>
+                </ul>
+                
+                <h3>3. Service Usage Data</h3>
+                <p>We collect information about how you interact with our services, including:</p>
+                <ul>
+                    <li>Service access times and duration</li>
+                    <li>Features used and preferences</li>
+                    <li>Performance data and error reports</li>
+                    <li>Search queries and results</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2>How We Use Your Information</h2>
+                <p>We use the information we collect for various business purposes, including:</p>
+                
+                <h3>4. Service Provision and Account Management</h3>
+                <p>We process your information to provide the services you request, including creating and managing your account, processing payments, scheduling services, and communicating with you about your account. This includes sending service-related emails, notifications, and administrative messages essential to your use of our services.</p>
+                
+                <h3>5. Personalization and Improvement</h3>
+                <p>We analyze user behavior to personalize your experience, recommend relevant services, and improve our website functionality. This includes remembering your preferences, suggesting gardening services based on your location and past interactions, and optimizing our website layout based on user navigation patterns.</p>
+                
+                <h3>6. Marketing and Promotions</h3>
+                <p>With your consent, we may send you promotional communications about our services, special offers, and gardening tips. You can opt-out of these communications at any time. We may also use your information to display targeted advertisements on third-party platforms based on your interests and browsing behavior.</p>
+                
+                <h3>7. Legal Compliance and Security</h3>
+                <p>We use your information to comply with legal obligations, resolve disputes, enforce our agreements, and protect against fraudulent or illegal activities. This includes verifying identities for fraud prevention, investigating security incidents, and responding to lawful requests from public authorities.</p>
+                
+                <h3>8. Analytics and Research</h3>
+                <p>We analyze aggregated data to understand user trends, measure service effectiveness, and conduct market research. This helps us develop new features, improve existing services, and make informed business decisions. All analytics are performed on anonymized or pseudonymized data where possible.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>Information Sharing and Disclosure</h2>
+                <p>We may share your information in the following circumstances:</p>
+                
+                <h3>9. Service Providers</h3>
+                <p>We engage trusted third-party companies to facilitate our services, including payment processors, hosting providers, marketing platforms, and analytics services. These providers have access to your information only to perform specific tasks on our behalf and are obligated not to disclose or use it for other purposes.</p>
+                
+                <h3>10. Business Transfers</h3>
+                <p>In the event of a merger, acquisition, reorganization, bankruptcy, or similar corporate transaction, we may transfer your information as part of the business assets. You will be notified via email and/or prominent notice on our website of any change in ownership or uses of your personal information.</p>
+                
+                <h3>11. Legal Requirements</h3>
+                <p>We may disclose your information if required by law or in response to valid requests by public authorities (e.g., court orders, subpoenas). This includes situations where disclosure is necessary to protect our rights, your safety, or the safety of others, investigate fraud, or respond to government requests.</p>
+                
+                <h3>12. With Your Consent</h3>
+                <p>We may share your information with third parties when we have your explicit consent to do so. For example, if you choose to participate in a co-marketing promotion with one of our partners, we may share relevant information with that partner to facilitate the offer.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>Data Security</h2>
+                <p>We implement appropriate technical and organizational measures to protect your personal information:</p>
+                
+                <h3>13. Encryption and Access Controls</h3>
+                <p>We use SSL/TLS encryption for data transmission and store sensitive information using industry-standard encryption methods. Access to personal data is restricted to authorized personnel who need the information to perform their job functions, and all access is logged and monitored.</p>
+                
+                <h3>14. Security Practices</h3>
+                <p>We maintain comprehensive security policies, conduct regular security audits, and provide employee training on data protection. Our systems are protected by firewalls, intrusion detection systems, and regular vulnerability scanning to identify and address potential security risks.</p>
+                
+                <h3>15. Incident Response</h3>
+                <p>We have established procedures to handle potential data breaches, including notification processes to comply with applicable laws. In the event of a security incident that affects your personal data, we will promptly investigate the issue and notify you and relevant authorities as required by law.</p>
+                
+                <h3>16. Data Retention</h3>
+                <p>We retain personal information only for as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required or permitted by law. When determining retention periods, we consider the amount, nature, and sensitivity of the data, potential risk from unauthorized use, and legal requirements.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>Your Data Protection Rights</h2>
+                <p>Depending on your location, you may have certain rights regarding your personal information:</p>
+                
+                <h3>17. Access and Portability</h3>
+                <p>You may request a copy of your personal data in a structured, commonly used format. We will provide this information within a reasonable timeframe, typically within 30 days of receiving your request. You can access much of your information directly through your account settings.</p>
+                
+                <h3>18. Correction</h3>
+                <p>You may request correction of inaccurate or incomplete personal data. We encourage you to review and update your account information regularly to ensure it remains accurate. You can update most of your personal information through your account settings or by contacting our support team.</p>
+                
+                <h3>19. Deletion</h3>
+                <p>You may request deletion of your personal data, subject to certain legal exceptions. Upon receiving a valid deletion request, we will remove your personal data from our active systems, though some information may remain in backup archives for legal compliance purposes until those backups are cycled out.</p>
+                
+                <h3>20. Restriction and Objection</h3>
+                <p>You may request restriction of processing or object to certain types of processing, such as direct marketing. If you object to processing based on legitimate interests, we will reassess the balance between our interests and your rights. You can manage many of these preferences through your account settings.</p>
+                
+                <h3>21. Withdraw Consent</h3>
+                <p>Where processing is based on consent, you may withdraw consent at any time without affecting the lawfulness of processing based on consent before its withdrawal. This includes opting out of marketing communications, which you can do by clicking the unsubscribe link in any marketing email or adjusting your account preferences.</p>
+                
+                <h3>22. Non-Discrimination</h3>
+                <p>We will not discriminate against you for exercising your privacy rights. This means we will not deny you services, charge different prices, or provide a different level or quality of services because you exercised any of your privacy rights, unless permitted by applicable laws.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>Cookies and Tracking Technologies</h2>
+                <p>We use cookies and similar tracking technologies to enhance your experience:</p>
+                
+                <h3>23. Types of Cookies</h3>
+                <p>We use several types of cookies, including essential cookies for website functionality, performance cookies to analyze site usage, functionality cookies to remember your preferences, and targeting cookies for advertising purposes. Each cookie serves a specific purpose in improving your experience with our services.</p>
+                
+                <h3>24. Cookie Management</h3>
+                <p>You can control cookies through your browser settings and our cookie consent banner. Most browsers allow you to refuse cookies or alert you when cookies are being sent. However, disabling certain cookies may affect the functionality of our website and services. Our cookie banner provides granular control over different cookie categories.</p>
+                
+                <h3>25. Do Not Track Signals</h3>
+                <p>Our website does not currently respond to Do Not Track (DNT) browser signals. However, we provide equivalent privacy controls through our cookie management tools and privacy settings. We are monitoring developments around DNT signals and may implement support in the future as standards evolve.</p>
+                
+                <h3>26. Third-Party Tracking</h3>
+                <p>We allow certain third parties to use tracking technologies on our website for analytics and advertising purposes. These third parties may collect information about your online activities over time and across different websites. We carefully vet these partners and require them to adhere to strict data protection standards.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>International Data Transfers</h2>
+                <p>Your information may be transferred to and processed in countries other than your own:</p>
+                
+                <h3>27. Transfer Mechanisms</h3>
+                <p>When transferring data outside the European Economic Area (EEA), we use appropriate safeguards such as Standard Contractual Clauses approved by the European Commission. We ensure that all international data transfers comply with applicable data protection laws and provide adequate protection for your personal information.</p>
+                
+                <h3>28. Data Localization</h3>
+                <p>We store data primarily in the United States but may use cloud services with global infrastructure. Regardless of where your data is processed, we apply the same protections described in this policy. We take steps to ensure that our service providers maintain adequate security measures regardless of location.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>Children's Privacy</h2>
+                <p>Our services are not directed to children under the age of 16:</p>
+                
+                <h3>29. Age Restrictions</h3>
+                <p>We do not knowingly collect personal information from children under 16 without parental consent. If we become aware that we have collected personal information from a child without verification of parental consent, we will take steps to remove that information from our servers. Parents or guardians who believe their child has provided us with personal information should contact us immediately.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>Third-Party Links</h2>
+                <p>Our website may contain links to third-party websites:</p>
+                
+                <h3>30. External Sites</h3>
+                <p>We are not responsible for the privacy practices or content of external sites. We encourage you to review the privacy policies of any third-party sites you visit. These third-party sites may independently collect data, place cookies, or solicit personal information from you, and our privacy policy does not cover their practices.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>Changes to This Policy</h2>
+                <p>We may update this privacy policy from time to time:</p>
+                
+                <h3>31. Notification of Changes</h3>
+                <p>We will notify you of significant changes through email or prominent website notices. The "Last Updated" date at the top of this policy indicates when revisions were made. We encourage you to periodically review this page for the latest information on our privacy practices. Your continued use of our services after changes constitutes acceptance of the updated policy.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>Contact Information</h2>
+                <p>If you have questions about this privacy policy:</p>
+                
+                <h3>32. Data Controller</h3>
+                <p>Eco-nestro LLC is the data controller for personal information collected through our services. Our registered office is located at 80 Lafayette St, New York, NY 10013, USA. You can contact our Data Protection Officer for privacy-related inquiries.</p>
+                
+                <h3>33. Contact Methods</h3>
+                <p>You may contact us at privacy@eco-nestro.com or by mail at the address above. For general inquiries, please use our main contact form. For privacy-specific concerns, please include "Privacy Request" in your subject line to ensure prompt handling by our privacy team.</p>
+                
+                <h3>34. Response Time</h3>
+                <p>We strive to respond to all privacy-related inquiries within 30 days. For complex requests, we may need additional time and will notify you of any delay. Please provide sufficient detail in your request to help us process it efficiently, including your account information if applicable.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>Additional Provisions</h2>
+                
+                <h3>35. California Privacy Rights</h3>
+                <p>California residents have specific rights under the CCPA, including the right to request disclosure of data collection and sharing practices, and to opt-out of the sale of personal information. California consumers may request this information twice per calendar year. We do not sell personal information as defined by the CCPA.</p>
+                
+                <h3>36. Nevada Privacy Rights</h3>
+                <p>Nevada residents may opt-out of the sale of certain personal information under Nevada law. While we do not currently sell personal information as defined by Nevada law, you may submit an opt-out request which we will honor if our practices change in the future.</p>
+                
+                <h3>37. EU/UK GDPR Rights</h3>
+                <p>EU and UK residents have additional rights under the GDPR, including the right to lodge a complaint with a supervisory authority. If you believe our processing of your personal data infringes data protection laws, you have the right to file a complaint with the relevant data protection authority in your country of residence.</p>
+                
+                <h3>38. Canadian Privacy Rights</h3>
+                <p>Canadian residents have rights under PIPEDA, including the right to access and challenge the accuracy of their personal information. We are committed to complying with Canadian privacy laws and will respond to requests in accordance with applicable requirements.</p>
+                
+                <h3>39. Australian Privacy Rights</h3>
+                <p>Australian residents have rights under the Privacy Act 1988, including the right to access and correct their personal information. We will handle all requests from Australian residents in accordance with the Australian Privacy Principles.</p>
+                
+                <h3>40. Breach Notification</h3>
+                <p>In the event of a data breach that poses a risk to your rights and freedoms, we will notify you and relevant authorities as required by law. Our breach notification procedures include internal reporting, risk assessment, and notification processes designed to comply with applicable breach notification laws.</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Summary of Key Points</h3>
+                <ul>
+                    <li>We collect information to provide and improve our services, with your consent when required</li>
+                    <li>You have rights to access, correct, delete, and restrict processing of your data</li>
+                    <li>We implement strong security measures to protect your information</li>
+                    <li>We may update this policy and will notify you of significant changes</li>
+                    <li>Contact us with any privacy-related questions or concerns</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>Eco-nestro</h4>
+                    <p>Creating sustainable, beautiful green spaces in urban environments since 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Residential Garden Design</a></li>
+                        <li><a href="#">Commercial Landscaping</a></li>
+                        <li><a href="#">Garden Maintenance</a></li>
+                        <li><a href="#">Vertical Gardens</a></li>
+                        <li><a href="#">Organic Vegetable Gardens</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 80 Lafayette St, New York, NY 10013</li>
+                        <li><i class="fas fa-phone-alt"></i> (212) 555-0199</li>
+                        <li><i class="fas fa-envelope"></i> hello@eco-nestro.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="disclaimer">
+                <p><strong>Disclaimer:</strong> The information provided in this privacy policy is for general informational purposes only. While we strive to keep the information up-to-date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the policy or the information contained for any purpose. Any reliance you place on such information is therefore strictly at your own risk.</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Eco-nestro. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="cookies.html">Cookie Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mainNav = document.getElementById('mainNav');
+        
+        mobileMenu.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (mainNav.classList.contains('active')) {
+                        mainNav.classList.remove('active');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

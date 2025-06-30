@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy | Eco-nestro Organic Gardening Services</title>
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #6b8e23;
+            --secondary-color: #556b2f;
+            --accent-color: #8fbc8f;
+            --light-color: #f5f5f0;
+            --dark-color: #33332d;
+            --text-color: #3a3a32;
+            --highlight-color: #c1d8ac;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--primary-color);
+            padding: 20px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Cookie Policy Header */
+        .cookie-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .cookie-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .cookie-header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Cookie Policy Content */
+        .cookie-content {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .cookie-section {
+            margin-bottom: 50px;
+        }
+
+        .cookie-section h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .cookie-section h3 {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin: 30px 0 15px;
+        }
+
+        .cookie-section p {
+            margin-bottom: 15px;
+        }
+
+        .cookie-section ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .cookie-section li {
+            margin-bottom: 10px;
+        }
+
+        .highlight-box {
+            background-color: var(--highlight-color);
+            padding: 20px;
+            border-left: 4px solid var(--primary-color);
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+
+        .cookie-table th, .cookie-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cookie-table th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .cookie-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .cookie-table tr:hover {
+            background-color: var(--highlight-color);
+        }
+
+        /* Cookie Consent Banner */
+        .cookie-consent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--dark-color);
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 999;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cookie-consent p {
+            flex: 1;
+            min-width: 300px;
+            margin-right: 20px;
+            margin-bottom: 15px;
+        }
+
+        .cookie-consent-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .cookie-btn {
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .cookie-btn.accept {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+        }
+
+        .cookie-btn.accept:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .cookie-btn.decline {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+        }
+
+        .cookie-btn.decline:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .cookie-btn.settings {
+            background-color: transparent;
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+        }
+
+        .cookie-btn.settings:hover {
+            background-color: rgba(143, 188, 143, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        .disclaimer {
+            background-color: #222;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            line-height: 1.5;
+            color: #aaa;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-container {
+                position: relative;
+            }
+            
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--primary-color);
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                display: none;
+            }
+            
+            nav.active {
+                display: block;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin: 0 0 15px 0;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .cookie-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .cookie-consent {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .cookie-consent p {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .cookie-consent-buttons {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Eco-nestro</h1>
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu" id="mobileMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cookie Policy Header -->
+    <section class="cookie-header">
+        <div class="container">
+            <h1>Cookie Policy</h1>
+            <p>Last Updated: June 15, 2023</p>
+        </div>
+    </section>
+
+    <!-- Cookie Policy Content -->
+    <section class="cookie-content">
+        <div class="container">
+            <div class="cookie-section">
+                <h2>Introduction</h2>
+                <p>Welcome to Eco-nestro's Cookie Policy. This document explains how we use cookies and similar tracking technologies on our website. By using our website, you consent to the use of cookies in accordance with this policy. Cookies are small text files stored on your device when you access our website.</p>
+                
+                <div class="highlight-box">
+                    <p>We use cookies to enhance your browsing experience, analyze website traffic, and personalize content. This policy describes the types of cookies we use, their purposes, and how you can manage your cookie preferences. If you do not agree with our use of cookies, you should adjust your browser settings or refrain from using our website.</p>
+                </div>
+                
+                <p>This policy applies to all cookies used on the Eco-nestro website, including those set by us (first-party cookies) and those set by third-party services we use (third-party cookies). We regularly review our cookie usage and update this policy accordingly. We recommend checking this page periodically for updates.</p>
+            </div>
+
+            <div class="cookie-section">
+                <h2>Types of Cookies We Use</h2>
+                <p>We use several types of cookies for different purposes:</p>
+                
+                <h3>1. Essential Cookies</h3>
+                <p>These cookies are necessary for the website to function properly and cannot be switched off. They enable core functionality such as security, network management, and accessibility. Without these cookies, our website cannot operate effectively. They are usually set in response to actions you take, such as setting your privacy preferences or filling in forms.</p>
+                
+                <h3>2. Performance Cookies</h3>
+                <p>These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. They allow us to count visits and traffic sources so we can measure and improve site performance. The data these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies, we will not know when you have visited our site.</p>
+                
+                <h3>3. Functional Cookies</h3>
+                <p>These cookies enable enhanced functionality and personalization, such as remembering your preferences (like language or region) and providing enhanced, more personal features. They may be set by us or by third-party providers whose services we have added to our pages. Without these cookies, certain functionality may become unavailable.</p>
+                
+                <h3>4. Targeting Cookies</h3>
+                <p>These cookies may be set through our site by our advertising partners to build a profile of your interests and show you relevant ads on other sites. They work by uniquely identifying your browser and device. If you do not allow these cookies, you will experience less targeted advertising.</p>
+                
+                <h3>5. Social Media Cookies</h3>
+                <p>These cookies are set by social media services we've added to our site to enable you to share our content with your friends and networks. They are capable of tracking your browser across other sites and building up a profile of your interests. This may impact the content and messages you see on other websites you visit.</p>
+            </div>
+
+            <div class="cookie-section">
+                <h2>Detailed Cookie List</h2>
+                <p>The table below provides more information about the cookies we use and their purposes:</p>
+                
+                <table class="cookie-table">
+                    <thead>
+                        <tr>
+                            <th>Cookie Name</th>
+                            <th>Provider</th>
+                            <th>Purpose</th>
+                            <th>Duration</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>eco_session</td>
+                            <td>Eco-nestro</td>
+                            <td>Maintains user session state</td>
+                            <td>Session</td>
+                            <td>Essential</td>
+                        </tr>
+                        <tr>
+                            <td>eco_consent</td>
+                            <td>Eco-nestro</td>
+                            <td>Stores cookie consent preferences</td>
+                            <td>1 year</td>
+                            <td>Essential</td>
+                        </tr>
+                        <tr>
+                            <td>_ga</td>
+                            <td>Google Analytics</td>
+                            <td>Distinguishes unique users</td>
+                            <td>2 years</td>
+                            <td>Performance</td>
+                        </tr>
+                        <tr>
+                            <td>_gid</td>
+                            <td>Google Analytics</td>
+                            <td>Distinguishes unique users</td>
+                            <td>24 hours</td>
+                            <td>Performance</td>
+                        </tr>
+                        <tr>
+                            <td>_gat</td>
+                            <td>Google Analytics</td>
+                            <td>Throttles request rate</td>
+                            <td>1 minute</td>
+                            <td>Performance</td>
+                        </tr>
+                        <tr>
+                            <td>eco_prefs</td>
+                            <td>Eco-nestro</td>
+                            <td>Stores user preferences</td>
+                            <td>1 year</td>
+                            <td>Functional</td>
+                        </tr>
+                        <tr>
+                            <td>fr</td>
+                            <td>Facebook</td>
+                            <td>Enables social media features</td>
+                            <td>3 months</td>
+                            <td>Social Media</td>
+                        </tr>
+                        <tr>
+                            <td>NID</td>
+                            <td>Google</td>
+                            <td>Stores user preferences</td>
+                            <td>6 months</td>
+                            <td>Targeting</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="cookie-section">
+                <h2>Cookie Management</h2>
+                <p>You have several options to manage cookies on our website:</p>
+                
+                <h3>6. Browser Settings</h3>
+                <p>Most web browsers allow you to control cookies through their settings. You can usually find these settings in the "Options" or "Preferences" menu of your browser. Common browser controls include the ability to delete existing cookies, block all cookies, or set preferences for certain websites. Note that blocking all cookies may affect your ability to use some features of our website.</p>
+                
+                <h3>7. Cookie Consent Tool</h3>
+                <p>Our cookie consent banner allows you to selectively accept or reject different categories of cookies (except essential cookies). You can change your preferences at any time by clicking the "Cookie Settings" link in the footer of our website. Your preferences will be remembered for future visits through a cookie.</p>
+                
+                <h3>8. Third-Party Opt-Outs</h3>
+                <p>For third-party cookies used for advertising and analytics, you can often opt out directly with the third-party provider. Many advertising networks offer opt-out mechanisms, such as the Digital Advertising Alliance's opt-out page (aboutads.info) or the Network Advertising Initiative's opt-out page (optout.networkadvertising.org). These opt-outs are typically cookie-based and will need to be reset if you clear your cookies.</p>
+                
+                <h3>9. Do Not Track Signals</h3>
+                <p>Some browsers offer a "Do Not Track" (DNT) feature that sends a signal to websites indicating you don't want to be tracked. Currently, our website doesn't respond to DNT signals, as there's no industry standard for compliance. Instead, we offer granular cookie controls through our consent management tool.</p>
+                
+                <h3>10. Mobile Device Controls</h3>
+                <p>On mobile devices, you may have additional controls in your device's operating system to limit ad tracking. For iOS devices, look for "Limit Ad Tracking" in Settings, and for Android devices, look for "Opt out of Ads Personalization." These controls affect how third-party cookies are used for advertising purposes.</p>
+            </div>
+
+            <div class="cookie-section">
+                <h2>Why We Use Cookies</h2>
+                <p>Cookies serve several important functions for our website and services:</p>
+                
+                <h3>11. Website Functionality</h3>
+                <p>Essential cookies allow our website to work properly by enabling basic functions like page navigation and access to secure areas. Without these cookies, features like shopping carts or secure login would not work correctly. They also help maintain your session as you move between pages, preventing you from having to re-enter information.</p>
+                
+                <h3>12. User Experience</h3>
+                <p>Functional cookies remember your preferences and choices (such as language, region, or login information) to provide you with a more personalized experience. They enable features like remembering items in your cart or maintaining your logged-in status. These cookies can also enable enhanced features like live chat support.</p>
+                
+                <h3>13. Performance Optimization</h3>
+                <p>Performance cookies help us understand how visitors use our website, which pages are most popular, and where users may encounter problems. This information helps us improve the site's performance and user experience. We use aggregated analytics data to identify trends and make informed decisions about site improvements.</p>
+                
+                <h3>14. Marketing Effectiveness</h3>
+                <p>Targeting cookies help us measure the effectiveness of our marketing campaigns and deliver relevant advertising. They allow us to limit how many times you see an ad and help us understand if our advertising is effective. These cookies may also enable us to show you ads on other sites based on your browsing behavior on our site.</p>
+                
+                <h3>15. Social Media Integration</h3>
+                <p>Social media cookies enable you to share content from our website on social networks and allow social media features to work properly. They may track your browser across other sites to build a profile of your interests. This can affect the content and messages you see on other websites you visit.</p>
+            </div>
+
+            <div class="cookie-section">
+                <h2>Cookie Duration</h2>
+                <p>Cookies have different lifespans depending on their purpose:</p>
+                
+                <h3>16. Session Cookies</h3>
+                <p>Session cookies are temporary and are deleted when you close your browser. They are essential for maintaining your session and enabling features like staying logged in as you navigate our site. These cookies don't collect information from your computer and typically store information in the form of a session identification.</p>
+                
+                <h3>17. Persistent Cookies</h3>
+                <p>Persistent cookies remain on your device for a set period specified in the cookie or until you delete them. They enable our website to recognize you when you return and remember your preferences. The duration varies from a few days to several years, depending on the cookie's purpose and your interactions with our site.</p>
+                
+                <h3>18. First-Party Cookies</h3>
+                <p>First-party cookies are set by our website domain and can only be read by our site. They are generally used for functionality specific to our website, such as remembering your login details or language preferences. These cookies are typically more secure and privacy-focused than third-party cookies.</p>
+                
+                <h3>19. Third-Party Cookies</h3>
+                <p>Third-party cookies are set by domains other than ours, typically by our partners and service providers. These cookies are used for cross-site tracking, retargeting, and ad-serving. The duration of these cookies is controlled by the third parties that set them, though many provide mechanisms to opt out of tracking.</p>
+                
+                <h3>20. Supercookies</h3>
+                <p>We do not use "supercookies" or other tracking methods that are difficult to detect or remove. All our tracking technologies are standard cookies that can be managed through normal browser settings. We believe in transparent tracking practices and provide clear information about all cookies we use.</p>
+            </div>
+
+            <div class="cookie-section">
+                <h2>Legal Compliance</h2>
+                <p>Our cookie practices comply with applicable privacy laws:</p>
+                
+                <h3>21. GDPR Compliance</h3>
+                <p>For visitors from the European Union, we comply with the General Data Protection Regulation (GDPR) requirements for cookie consent. We obtain explicit consent before setting non-essential cookies and provide clear information about their purposes. You have the right to withdraw consent at any time through our cookie settings.</p>
+                
+                <h3>22. CCPA Compliance</h3>
+                <p>For California residents, we comply with the California Consumer Privacy Act (CCPA) by providing information about cookie-based data collection and offering opt-out mechanisms for the "sale" of personal information. Our cookie consent tool includes options to opt out of tracking cookies used for targeted advertising.</p>
+                
+                <h3>23. ePrivacy Directive</h3>
+                <p>We follow the EU ePrivacy Directive requirements by providing clear and comprehensive information about our use of cookies and obtaining consent before setting non-essential cookies. Our cookie banner appears on first visit and allows users to make granular choices about cookie categories.</p>
+                
+                <h3>24. Children's Privacy</h3>
+                <p>We do not knowingly use cookies to collect personal information from children under 16 without parental consent. If we become aware that we have collected personal information from a child without verification of parental consent, we will take steps to remove that information and delete any related cookies.</p>
+                
+                <h3>25. International Transfers</h3>
+                <p>Some third-party cookies may involve the transfer of data outside your country of residence. Where this occurs, we ensure appropriate safeguards are in place, such as Standard Contractual Clauses for EU data transfers. More information is available in our Privacy Policy.</p>
+            </div>
+
+            <div class="cookie-section">
+                <h2>Cookie Technology Details</h2>
+                <p>Understanding the technical aspects of our cookie usage:</p>
+                
+                <h3>26. HTTP Cookies</h3>
+                <p>Standard HTTP cookies are small text files placed on your device by our web server. They contain anonymous unique identifiers and are used to maintain your session and preferences. These cookies are supported by all browsers and can be easily managed through browser settings or our consent tool.</p>
+                
+                <h3>27. Local Storage</h3>
+                <p>We may use HTML5 local storage to store larger amounts of data on your device for functionality purposes (like saving draft forms). Unlike cookies, this data isn't transmitted to the server with each request. You can clear local storage through your browser's developer tools or privacy settings.</p>
+                
+                <h3>28. Pixel Tags</h3>
+                <p>We may use pixel tags (clear GIFs) in conjunction with cookies to track conversions from our marketing campaigns. These tiny invisible images help us understand if our ads are effective without collecting personally identifiable information unless you voluntarily provide it.</p>
+                
+                <h3>29. Fingerprinting</h3>
+                <p>We do not use browser fingerprinting or other covert tracking techniques that cannot be managed through normal privacy controls. All our tracking methods are transparent and can be controlled through our cookie consent tool or standard browser settings.</p>
+                
+                <h3>30. Secure Cookies</h3>
+                <p>We use secure, HTTP-only flags for cookies that contain sensitive information (like authentication tokens). These security measures help prevent cross-site scripting (XSS) attacks and ensure cookies are only transmitted over encrypted HTTPS connections.</p>
+            </div>
+
+            <div class="cookie-section">
+                <h2>Impact of Disabling Cookies</h2>
+                <p>Understanding the consequences of cookie restrictions:</p>
+                
+                <h3>31. Essential Features</h3>
+                <p>If you disable essential cookies, certain features of our website may not work properly. This includes the ability to log in to your account, add items to your cart, or proceed through checkout. Some pages may not display correctly, and you may need to re-enter information more frequently.</p>
+                
+                <h3>32. Personalization Loss</h3>
+                <p>Without functional cookies, our website won't remember your preferences or customized settings. You may need to reset your language, region, or display preferences each time you visit. Personalized recommendations and saved items may not be available.</p>
+                
+                <h3>33. Analytics Impact</h3>
+                <p>Blocking performance cookies means we won't be able to gather data about how you use our site, which limits our ability to improve it. Your visits won't be counted in our analytics, and we won't be able to identify and fix usability issues that might affect your experience.</p>
+                
+                <h3>34. Advertising Relevance</h3>
+                <p>Opting out of targeting cookies means you may see advertising that's less relevant to your interests. You may see the same ads repeatedly, as frequency capping won't work, and the ads won't be tailored based on your browsing behavior on our site.</p>
+                
+                <h3>35. Social Features</h3>
+                <p>Without social media cookies, sharing content to social networks may not work properly. Social media plugins (like Facebook "Like" buttons) may not function, and you may need to manually copy and paste links to share content on social platforms.</p>
+            </div>
+
+            <div class="cookie-section">
+                <h2>Additional Information</h2>
+                <p>More details about our cookie practices:</p>
+                
+                <h3>36. Cookie Updates</h3>
+                <p>We regularly review and update our cookie usage as we add new features to our website or change service providers. Significant changes to our cookie practices will be noted in updates to this policy. We recommend checking this page periodically for the latest information.</p>
+                
+                <h3>37. Third-Party Services</h3>
+                <p>We use several third-party services that may set their own cookies, including Google Analytics, Facebook Pixel, and advertising networks. These services have their own privacy policies, and we encourage you to review them. We only work with reputable providers who comply with applicable privacy laws.</p>
+                
+                <h3>38. Data Retention</h3>
+                <p>Cookie data is retained only for as long as necessary to fulfill the purposes outlined in this policy. Persistent cookies have set expiration dates, after which they are automatically deleted. You can manually delete cookies at any time through your browser settings.</p>
+                
+                <h3>39. Contact for Questions</h3>
+                <p>If you have questions about our use of cookies, please contact our Data Protection Officer at privacy@eco-nestro.com or by mail at our physical address. For technical questions about managing cookies, consult your browser's help resources or contact their support team.</p>
+                
+                <h3>40. Policy Changes</h3>
+                <p>We may update this Cookie Policy from time to time. When we make significant changes, we'll notify you through a notice on our website or by email (if we have your contact information). Your continued use of our website after changes constitutes acceptance of the updated policy.</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Summary of Key Points</h3>
+                <ul>
+                    <li>We use cookies to enhance your browsing experience and improve our services</li>
+                    <li>You can manage cookies through our consent tool or browser settings</li>
+                    <li>Essential cookies are required for the website to function properly</li>
+                    <li>We comply with GDPR, CCPA, and other privacy regulations</li>
+                    <li>Contact us if you have questions about our cookie practices</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>Eco-nestro</h4>
+                    <p>Creating sustainable, beautiful green spaces in urban environments since 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Residential Garden Design</a></li>
+                        <li><a href="#">Commercial Landscaping</a></li>
+                        <li><a href="#">Garden Maintenance</a></li>
+                        <li><a href="#">Vertical Gardens</a></li>
+                        <li><a href="#">Organic Vegetable Gardens</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 80 Lafayette St, New York, NY 10013</li>
+                        <li><i class="fas fa-phone-alt"></i> (212) 555-0199</li>
+                        <li><i class="fas fa-envelope"></i> hello@eco-nestro.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="disclaimer">
+                <p><strong>Disclaimer:</strong> The information provided in this cookie policy is for general informational purposes only. While we strive to keep the information up-to-date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the cookie information or the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Eco-nestro. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="cookies.html">Cookie Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent" id="cookieConsent">
+        <p>We use cookies to enhance your experience on our website. By clicking "Accept", you consent to our use of all cookies. You can manage your preferences by clicking "Settings".</p>
+        <div class="cookie-consent-buttons">
+            <button class="cookie-btn accept" id="acceptCookies">Accept</button>
+            <button class="cookie-btn decline" id="declineCookies">Decline</button>
+            <button class="cookie-btn settings" id="cookieSettings">Settings</button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mainNav = document.getElementById('mainNav');
+        
+        mobileMenu.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+        
+        // Cookie Consent Functions
+        const cookieConsent = document.getElementById('cookieConsent');
+        const acceptCookies = document.getElementById('acceptCookies');
+        const declineCookies = document.getElementById('declineCookies');
+        const cookieSettings = document.getElementById('cookieSettings');
+        
+        // Check if user has already made a choice
+        if (!localStorage.getItem('cookieConsent')) {
+            cookieConsent.style.display = 'flex';
+        } else {
+            cookieConsent.style.display = 'none';
+        }
+        
+        // Handle accept button
+        acceptCookies.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'accepted');
+            cookieConsent.style.display = 'none';
+            // Here you would also set all cookies
+        });
+        
+        // Handle decline button
+        declineCookies.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'declined');
+            cookieConsent.style.display = 'none';
+            // Here you would only set essential cookies
+        });
+        
+        // Handle settings button
+        cookieSettings.addEventListener('click', () => {
+            alert('Cookie settings would open a modal with granular controls in a full implementation.');
+            // In a full implementation, this would open a modal with individual cookie category toggles
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (mainNav.classList.contains('active')) {
+                        mainNav.classList.remove('active');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

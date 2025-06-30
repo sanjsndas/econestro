@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | Eco-nestro Organic Gardening Services</title>
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #6b8e23;
+            --secondary-color: #556b2f;
+            --accent-color: #8fbc8f;
+            --light-color: #f5f5f0;
+            --dark-color: #33332d;
+            --text-color: #3a3a32;
+            --highlight-color: #c1d8ac;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--primary-color);
+            padding: 20px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Terms Content Styles */
+        .terms-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .terms-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .terms-header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .terms-content {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .terms-section {
+            margin-bottom: 50px;
+        }
+
+        .terms-section h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .terms-section h3 {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin: 30px 0 15px;
+        }
+
+        .terms-section p {
+            margin-bottom: 15px;
+        }
+
+        .terms-section ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .terms-section li {
+            margin-bottom: 10px;
+        }
+
+        .highlight-box {
+            background-color: var(--highlight-color);
+            padding: 20px;
+            border-left: 4px solid var(--primary-color);
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        .disclaimer {
+            background-color: #222;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            line-height: 1.5;
+            color: #aaa;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-container {
+                position: relative;
+            }
+            
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--primary-color);
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                display: none;
+            }
+            
+            nav.active {
+                display: block;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin: 0 0 15px 0;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .terms-header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Eco-nestro</h1>
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu" id="mobileMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Terms Header -->
+    <section class="terms-header">
+        <div class="container">
+            <h1>Terms of Service</h1>
+            <p>Last Updated: June 15, 2023</p>
+        </div>
+    </section>
+
+    <!-- Terms Content -->
+    <section class="terms-content">
+        <div class="container">
+            <div class="terms-section">
+                <h2>Introduction</h2>
+                <p>Welcome to Eco-nestro's Terms of Service. These terms govern your use of our website and services, so please read them carefully before using our services. By accessing or using our services, you agree to be bound by these terms and our Privacy Policy. If you disagree with any part of these terms, you may not access our services.</p>
+                
+                <div class="highlight-box">
+                    <p>These Terms of Service apply to all visitors, users, and others who wish to access or use our services. Your use of our services is also subject to any additional terms, policies, or guidelines we may provide for specific services, which will be incorporated by reference into these Terms.</p>
+                </div>
+                
+                <p>Eco-nestro provides organic gardening services including design, installation, and maintenance for residential and commercial properties in New York City. These terms outline the rules and regulations for using our services, as well as the contractual agreement between you and Eco-nestro regarding the services we provide.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>Account Terms</h2>
+                <p>To access certain features of our services, you may be required to create an account with Eco-nestro. When creating an account, you agree to the following terms:</p>
+                
+                <h3>1. Account Creation</h3>
+                <p>You must provide accurate, current, and complete information during the registration process and keep your account information updated. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You must immediately notify us of any unauthorized use of your account or any other security breaches.</p>
+                
+                <h3>2. Eligibility</h3>
+                <p>By creating an account, you represent that you are at least 18 years of age and have the legal capacity to enter into these Terms. Accounts registered by automated methods or created on behalf of individuals without their authorization are prohibited. We reserve the right to refuse service, terminate accounts, or remove content at our sole discretion.</p>
+                
+                <h3>3. Account Security</h3>
+                <p>You are solely responsible for safeguarding your password and for any activities or actions under your account. Eco-nestro cannot and will not be liable for any loss or damage from your failure to comply with this security obligation. We recommend using strong passwords and enabling two-factor authentication where available.</p>
+                
+                <h3>4. Account Termination</h3>
+                <p>You may terminate your account at any time by contacting us. We reserve the right to suspend or terminate your account and refuse any current or future use of our services for any reason at any time, including if we determine that you have violated these Terms or applicable laws.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>Service Terms</h2>
+                <p>These terms govern the specific gardening services provided by Eco-nestro to our clients:</p>
+                
+                <h3>5. Service Descriptions</h3>
+                <p>We strive to accurately describe our services on our website and marketing materials. However, we do not warrant that service descriptions or other content are accurate, complete, reliable, current, or error-free. Actual service results may vary based on environmental conditions, property characteristics, and other factors beyond our control.</p>
+                
+                <h3>6. Service Limitations</h3>
+                <p>Our services are subject to limitations based on seasonality, weather conditions, and plant availability. Some services may not be available in all areas or at all times. We reserve the right to modify or discontinue services without notice at any time. We shall not be liable to you or any third-party for any modification, price change, suspension, or discontinuance of services.</p>
+                
+                <h3>7. Service Scheduling</h3>
+                <p>Services are scheduled based on availability and may be subject to change due to weather conditions or other unforeseen circumstances. We will make reasonable efforts to notify you of any schedule changes. You may reschedule services with at least 48 hours notice without penalty, subject to availability.</p>
+                
+                <h3>8. Property Access</h3>
+                <p>You agree to provide our staff with safe and reasonable access to your property for service provision. This includes ensuring gates are unlocked, pets are secured, and any hazards are identified prior to our arrival. Failure to provide access may result in service cancellation and applicable fees.</p>
+                
+                <h3>9. Service Guarantee</h3>
+                <p>We guarantee our workmanship for 30 days following service completion. If you are not satisfied with our services, please contact us within this period for resolution. This guarantee does not cover plant failure due to environmental factors, pests, diseases, or improper post-service care by the client.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>Payment Terms</h2>
+                <p>The following terms apply to all payments for Eco-nestro services:</p>
+                
+                <h3>10. Pricing</h3>
+                <p>All prices are quoted in US dollars and are subject to change without notice. Prices may vary based on property size, condition, and specific service requirements. A final quote will be provided after initial consultation and site evaluation. Taxes and other fees may apply and will be clearly indicated before payment.</p>
+                
+                <h3>11. Payment Methods</h3>
+                <p>We accept major credit cards, debit cards, bank transfers, and checks. Payment is due at time of service unless otherwise agreed in writing. Recurring services may be set up with automatic payment for convenience. You authorize us to charge the payment method you provide for all applicable fees.</p>
+                
+                <h3>12. Deposits</h3>
+                <p>Certain services may require a deposit to secure your appointment. Deposits are typically 25-50% of the estimated service cost and will be applied to your final invoice. Deposits are non-refundable if you cancel with less than 72 hours notice, except as required by law.</p>
+                
+                <h3>13. Late Payments</h3>
+                <p>Accounts not paid within 15 days of invoice date will be considered delinquent. Late payments may be subject to interest charges of 1.5% per month (18% annually) or the maximum rate allowed by law. We reserve the right to suspend services for accounts with outstanding balances over 30 days.</p>
+                
+                <h3>14. Disputes</h3>
+                <p>If you dispute any charges, you must notify us in writing within 10 days of the invoice date. We will work with you to resolve any billing disputes in good faith. Unresolved disputes may be submitted to binding arbitration as outlined in these Terms.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>Cancellation Policy</h2>
+                <p>Our cancellation policy is designed to be fair to both our clients and our team:</p>
+                
+                <h3>15. Client Cancellations</h3>
+                <p>You may cancel scheduled services with at least 48 hours notice without penalty. Cancellations with less than 48 hours notice may be subject to a cancellation fee up to 50% of the service cost. No-show appointments will be charged the full service amount. Emergency cancellations due to illness or extreme weather will be considered on a case-by-case basis.</p>
+                
+                <h3>16. Company Cancellations</h3>
+                <p>We reserve the right to cancel or reschedule services due to inclement weather, safety concerns, or other circumstances beyond our control. In such cases, we will attempt to provide as much notice as possible and will reschedule at your earliest convenience without penalty.</p>
+                
+                <h3>17. Recurring Service Cancellation</h3>
+                <p>For ongoing maintenance contracts, you may cancel with 30 days written notice. Cancellations within the contract term may be subject to early termination fees as specified in your service agreement. Any prepaid amounts for unused services will be refunded on a pro-rata basis.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>Intellectual Property</h2>
+                <p>All content and materials provided through our services are protected by intellectual property laws:</p>
+                
+                <h3>18. Ownership</h3>
+                <p>All content included on our website and in our service materials, including text, graphics, logos, images, designs, and software, is the property of Eco-nestro or its content suppliers and protected by copyright and other laws. Your use of our services does not grant you ownership of any content, code, data, or materials you may access.</p>
+                
+                <h3>19. License</h3>
+                <p>We grant you a limited, non-exclusive, non-transferable license to access and use our services for personal, non-commercial purposes. This license does not include any resale or commercial use of our services or contents; any derivative use; or any use of data mining or similar data gathering tools.</p>
+                
+                <h3>20. Restrictions</h3>
+                <p>You may not modify, reproduce, distribute, create derivative works, publicly display, or commercially exploit any content from our services without our express written permission. Unauthorized use may violate copyright, trademark, and other laws and could result in criminal or civil penalties.</p>
+                
+                <h3>21. Garden Designs</h3>
+                <p>All garden designs created by Eco-nestro remain our intellectual property. Clients receive a license to implement the design on their specified property only. Designs may not be reproduced, shared, or implemented elsewhere without our written permission.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>User Conduct</h2>
+                <p>When using our services, you agree to the following conduct guidelines:</p>
+                
+                <h3>22. Prohibited Activities</h3>
+                <p>You agree not to engage in any of the following prohibited activities: (a) using our services for any illegal purpose; (b) harassing our staff or other users; (c) interfering with or disrupting our services; (d) attempting to gain unauthorized access to our systems; (e) providing false or misleading information; (f) violating any applicable laws or regulations.</p>
+                
+                <h3>23. Content Standards</h3>
+                <p>Any content you submit to us (feedback, reviews, photos, etc.) must not: (a) contain unlawful, threatening, or abusive material; (b) infringe any intellectual property rights; (c) contain viruses or malicious code; (d) contain false or misleading information; (e) impersonate any person or entity. We reserve the right to remove any content that violates these standards.</p>
+                
+                <h3>24. Professional Conduct</h3>
+                <p>Our team members are professionals who deserve to work in a safe, respectful environment. Any abusive behavior, harassment, or unsafe conditions may result in immediate termination of services without refund. We reserve the right to refuse service to anyone at our sole discretion.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>Limitations of Liability</h2>
+                <p>Our liability is limited as follows under these Terms:</p>
+                
+                <h3>25. Service Results</h3>
+                <p>While we strive for excellent results, Eco-nestro cannot guarantee specific outcomes from our services due to factors beyond our control such as weather, soil conditions, and plant health. We are not responsible for pre-existing conditions of your property or plants that may affect service results.</p>
+                
+                <h3>26. Property Damage</h3>
+                <p>We take utmost care with your property, but in the rare event of accidental damage, our liability is limited to the cost of repairs up to the amount paid for the service in question. We are not liable for damage to underground utilities, sprinkler systems, or other concealed elements not disclosed to us prior to service.</p>
+                
+                <h3>27. Plant Health</h3>
+                <p>We are not responsible for plant failure due to factors beyond our control, including extreme weather, pests, diseases, or improper care after our services are completed. Our plant health guarantee is limited to replacement of plants that fail within 30 days due to demonstrable installation errors.</p>
+                
+                <h3>28. Indirect Damages</h3>
+                <p>In no event shall Eco-nestro be liable for any indirect, incidental, special, consequential, or punitive damages, including lost profits, even if advised of the possibility of such damages. Our total liability for any claim arising from these Terms or our services shall not exceed the amount you paid us for the services in question.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>Indemnification</h2>
+                <p>You agree to indemnify and hold Eco-nestro harmless under these circumstances:</p>
+                
+                <h3>29. General Indemnity</h3>
+                <p>You agree to defend, indemnify, and hold harmless Eco-nestro and its affiliates, officers, employees, and agents from any claims, liabilities, damages, losses, and expenses arising from: (a) your use of our services; (b) your violation of these Terms; (c) your violation of any third-party right; (d) any content you submit; or (e) your willful misconduct.</p>
+                
+                <h3>30. Property Conditions</h3>
+                <p>You agree to indemnify us for any claims arising from pre-existing conditions of your property that you failed to disclose to us, including but not limited to underground hazards, pest infestations, diseased plants, or unsafe structures. It is your responsibility to inform us of any known hazards or special conditions prior to service.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>Dispute Resolution</h2>
+                <p>The following terms govern how disputes will be resolved:</p>
+                
+                <h3>31. Informal Resolution</h3>
+                <p>We prefer to resolve disputes informally and efficiently. Before initiating any formal proceeding, you agree to first contact us at legal@eco-nestro.com with a detailed description of your dispute. We will attempt in good faith to resolve the dispute within 30 days of receiving your notice.</p>
+                
+                <h3>32. Arbitration</h3>
+                <p>Any disputes not resolved informally shall be resolved by binding arbitration in New York County, New York, under the rules of the American Arbitration Association. The arbitrator's award shall be final and may be entered as a judgment in any court of competent jurisdiction. Arbitration will be conducted on an individual basis; class arbitrations are not permitted.</p>
+                
+                <h3>33. Governing Law</h3>
+                <p>These Terms shall be governed by the laws of the State of New York without regard to its conflict of law provisions. Any legal suit, action, or proceeding arising out of or related to these Terms shall be instituted exclusively in the federal or state courts located in New York County, New York.</p>
+                
+                <h3>34. Waiver of Jury Trial</h3>
+                <p>Both parties waive any right to a jury trial in any legal proceeding arising out of or relating to these Terms or the services. This waiver applies to all claims, whether based in contract, tort, statute, or otherwise.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>Miscellaneous Provisions</h2>
+                <p>These additional terms complete our Terms of Service:</p>
+                
+                <h3>35. Entire Agreement</h3>
+                <p>These Terms constitute the entire agreement between you and Eco-nestro regarding our services and supersede all prior agreements, representations, and understandings. No waiver of any term shall be deemed a further or continuing waiver of such term or any other term.</p>
+                
+                <h3>36. Severability</h3>
+                <p>If any provision of these Terms is held to be invalid or unenforceable, that provision shall be struck and the remaining provisions shall be enforced to the fullest extent under law. The invalid provision shall be replaced with a valid provision that most closely matches the intent of the original provision.</p>
+                
+                <h3>37. Force Majeure</h3>
+                <p>We shall not be liable for any failure or delay in performance due to events beyond our reasonable control, including acts of God, natural disasters, war, terrorism, riots, embargoes, acts of civil or military authorities, fire, floods, accidents, strikes, or shortages of materials.</p>
+                
+                <h3>38. Assignment</h3>
+                <p>You may not assign these Terms or any rights granted hereunder without our prior written consent. We may assign these Terms without restriction. These Terms shall be binding upon and inure to the benefit of the parties' successors and permitted assigns.</p>
+                
+                <h3>39. Notices</h3>
+                <p>Notices to you may be sent via email or postal mail to the addresses associated with your account. Notices to us should be sent to legal@eco-nestro.com or our mailing address with "Legal Notice" in the subject line. Notices are deemed given when received if by email or 5 business days after mailing if by post.</p>
+                
+                <h3>40. Changes to Terms</h3>
+                <p>We reserve the right to modify these Terms at any time. We will provide notice of material changes through our website or by email. Your continued use of our services after changes constitutes acceptance of the new Terms. We encourage you to periodically review these Terms for updates.</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Summary of Key Points</h3>
+                <ul>
+                    <li>You must create an account to access certain features and are responsible for maintaining its security</li>
+                    <li>Services are subject to availability and may be affected by factors beyond our control</li>
+                    <li>Payment is due as specified in your service agreement</li>
+                    <li>Cancellation policies apply to both clients and the company</li>
+                    <li>Disputes will first attempt informal resolution, then binding arbitration</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>Eco-nestro</h4>
+                    <p>Creating sustainable, beautiful green spaces in urban environments since 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Residential Garden Design</a></li>
+                        <li><a href="#">Commercial Landscaping</a></li>
+                        <li><a href="#">Garden Maintenance</a></li>
+                        <li><a href="#">Vertical Gardens</a></li>
+                        <li><a href="#">Organic Vegetable Gardens</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 80 Lafayette St, New York, NY 10013</li>
+                        <li><i class="fas fa-phone-alt"></i> (212) 555-0199</li>
+                        <li><i class="fas fa-envelope"></i> hello@eco-nestro.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="disclaimer">
+                <p><strong>Disclaimer:</strong> The information provided in these Terms of Service is for general informational purposes only. While we have made every attempt to ensure the accuracy and completeness of this information, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information in these Terms. Your use of our services and your reliance on any information in these Terms is solely at your own risk.</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Eco-nestro. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="cookies.html">Cookie Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mainNav = document.getElementById('mainNav');
+        
+        mobileMenu.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (mainNav.classList.contains('active')) {
+                        mainNav.classList.remove('active');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
